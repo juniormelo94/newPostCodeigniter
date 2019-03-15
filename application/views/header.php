@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/validarEmail/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/newpost/assets/css/style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -24,11 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <div class="navbar-nav">
-	      <a class="nav-item nav-link active" href="http://localhost/validarEmail/index.php/listarPedidos">Lista de Pedidos <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link active" href="http://localhost/newpost/index.php/listarPedidos">Lista de Pedidos <span class="sr-only">(current)</span></a>
 	      <a class="nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Criar Pedido</a>
-	      <a class="nav-item nav-link" href="http://localhost/validarEmail/index.php/listarTerminais">Listar Terminais</a>
+	      <a class="nav-item nav-link" href="http://localhost/newpost/index.php/listarTerminais">Listar Terminais</a>
 
-	      <a class="nav-item nav-link" href="http://localhost/validarEmail/index.php/listarTerminaisMapa">Listar Terminais no Mapa</a>	      
+	      <a class="nav-item nav-link" href="http://localhost/newpost/index.php/listarTerminaisMapa">Listar Terminais no Mapa</a>	      
 	    </div>
 	  </div>
 	</nav>
