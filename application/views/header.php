@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/newpost/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -17,6 +17,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
+<?php 
+	session_start();	
+	if (empty($_SESSION['logado'])) {
+		header('Location: '.BASE_URL);
+	}
+?>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <a class="navbar-brand" href="#">NEWPOST</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,11 +31,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <div class="navbar-nav">
-	      <a class="nav-item nav-link active" href="http://localhost/newpost/index.php/listarPedidos">Lista de Pedidos <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link active" href="<?php echo BASE_URL;?>index.php/listarPedidos">Lista de Pedidos <span class="sr-only">(current)</span></a>
 	      <a class="nav-item nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Criar Pedido</a>
-	      <a class="nav-item nav-link" href="http://localhost/newpost/index.php/listarTerminais">Listar Terminais</a>
+	      <a class="nav-item nav-link" href="<?php echo BASE_URL;?>index.php/listarTerminais">Listar Terminais</a>
 
-	      <a class="nav-item nav-link" href="http://localhost/newpost/index.php/listarTerminaisMapa">Listar Terminais no Mapa</a>	      
+
+	      <a class="nav-item nav-link" href="<?php echo BASE_URL;?>index.php/listarTerminaisMapa">Listar Terminais no Mapa</a>	
+
+	      <a class="nav-item nav-link" href="<?php echo BASE_URL;?>index.php/logout">Sair</a>      
 	    </div>
 	  </div>
 	</nav>

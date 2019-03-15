@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class ListarTerminais extends CI_Controller {
 
 	/**
-	 * criada para executar curl via post
+	 * Lista os terminais em tabela
 	 * @author Junior Melo <juniormelo94@hotmail.com> - 13/03/2019
 	 * 
 	 * @return view [retorna os dados da resposta]
@@ -21,11 +21,7 @@ class ListarTerminais extends CI_Controller {
 
 		$resposta = $this->curl->post(BASE_API_URL.'/sistema_cn/api/logistics/appinterface', $params);
 
-		$resposta = json_decode($resposta, true);
-
-		// echo "<pre>";
-		// print_r($resposta);
-		// exit;
+		$resposta = json_decode($resposta, true);	
 
 		$this->load->view('listarTerminais', ["resposta" => $resposta]);
 	}

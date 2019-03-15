@@ -68,7 +68,8 @@
 	                                <input class="input-md  textinput textInput form-control" name="Size" placeholder="exe: 15"  type="text"/>
 	                            </div>
 	                        </div>
-	                            
+	                        <span id="criar-pedido-mensagem">
+	                        </span>
 	                    </form>                    	
 	           		</div>
 	        	</div>
@@ -76,7 +77,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" onclick="btnEnviar()" class="btn btn-primary">Criar</button>
+        <button type="button" id="btnEnviar" onclick="btnEnviar()" class="btn btn-primary">Criar</button>
       </div>
     </div>
   </div>

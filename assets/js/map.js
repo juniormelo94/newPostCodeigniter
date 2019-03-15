@@ -2,7 +2,7 @@ var marcadores = []
 
 $.ajax({
 	type: "GET",
-    url: "http://localhost/validarEmail/index.php/getGetGeoData",
+    url: "http://localhost/newpost/index.php/getGetGeoData",
     dataType:"json",
     success: function(resposta)
     {

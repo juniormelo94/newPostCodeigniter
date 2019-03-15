@@ -6,7 +6,7 @@
 
 
 <div class="conteudo">
-	<h3>Tabela de terminais</h3>
+	<h3>Lista de terminais</h3>
 
 	<table class="table">
 	  <thead class="thead-dark">

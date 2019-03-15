@@ -4,11 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class PedidosModel extends CI_Model {
 
 	public function cadastrarPedidos($dados)
-	{
-		// echo 'teste<pre>';
-	 //    print_r($dados);
-	 //    exit;
-
+	{	
 		try {
 			$this->db->insert('pedidos', $dados);
 			return true;			

@@ -57,6 +57,8 @@
 
 	define('BASE_API_URL', 'http://testserver.newpost.com');
 
+	define('BASE_URL', 'http://localhost/newpost/');
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
